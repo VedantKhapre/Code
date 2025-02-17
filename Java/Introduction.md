@@ -1,23 +1,19 @@
 # Java Data Types
+Java is a strongly-typed language where every variable must have a declared type.
 
-## Theory
-Java is a strongly-typed language, which means every variable must have a declared type. Data types in Java are divided into two categories:
+## Two Main Categories
 
-### Primitive Data Types
-- Store simple values
-- Stored directly in memory (stack)
-- Have fixed size
-- Eight types: byte, short, int, long, float, double, char, boolean
-- Cannot be null
+### 1. Primitive Data Types
+- Store simple values in stack memory
+- Fixed size and can't be null
 - Start with lowercase letters
+- Examples: `byte`, `short`, `int`, `long`, `float`, `double`, `char`, `boolean`
 
-### Reference Data Types (Objects)
-- Store complex objects
-- Stored in heap memory (reference stored in stack)
-- Variable size
-- Examples: String, Arrays, Classes
-- Can be null
+### 2. Reference Data Types
+- Store complex objects in heap memory
+- Variable size and can be null
 - Start with uppercase letters
+- Examples: `String`, `Array`, `Class`
 
 ## Memory Allocation
 ```
@@ -31,27 +27,27 @@ Stack Memory                  Heap Memory
 
 ## Numerical Types
 
-### Mainly Used
+### Numbers (Mainly Used)
 ```java
 int aNumber = 42;                    // Integer (or Whole Number) [-2,147,483,648 to 2,147,483,647]
 float aFloatingNumber = 13.37f;      // Floating point number  [7 decimal point precision]
 double aDoubleNumber = 420.0005;     // Double number  [15 decimal point precision]
 ```
 
-### Sometimes Used
+### Numbers (Sometimes Used)
 ```java
 byte aTinyNumber = 100;              // One byte (or 8 bits) stores numbers from [-128 to 127]
 short aSmallNumber = 30000;          // short stores numbers from [-32,768 to 32,767]
 long aLongNumber = 50000000L;        // Long (for really long numbers) [-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807]
 ```
 
-## Logic Types
+### Logic Types
 ```java
 boolean isThisJAVA = true;          // Store either true (1) or false (0)
 boolean isThisHTML = false;
 ```
 
-## Text Types
+### Text Types
 ```java
 char aSingleCharacter = 'j';         // Stores a single Character. Can also include special Characters like commas, dashes etc.
 String message = "Hello World";      // Store a sequence of characters.
@@ -59,6 +55,7 @@ String test = null;                  // null is not 0, but literally empty. Has 
 ```
 
 ## Type Conversion
+
 ### Implicit Conversion (Widening)
 ```java
 int myInt = 100;
